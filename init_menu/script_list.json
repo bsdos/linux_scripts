@@ -1,0 +1,40 @@
+[
+    {
+        "displayname": "初始化脚本",
+        "type": "menu",
+        "url": "",
+        "sub": [
+            {
+                "displayname": "ssh互相信任",
+                "type": "script",
+                "url": "http://fdsjfd.com/init/ssh.sh",
+                "sub": []
+            },
+            {
+                "displayname": "修改ip地址",
+                "type": "script",
+                "url": "http://fdsjfd.com/init/ip.sh",
+                "sub": []
+            }
+        ]
+    },
+    {
+        "displayname": "安装软件",
+        "type": "menu",
+        "url": "",
+        "sub": [
+            {
+                "displayname": "安装nginx",
+                "type": "script",
+                "url": "http://fdsjfd.com/init/ssh1.sh",
+                "sub": []
+            },
+            {
+                "displayname": "安装mysql",
+                "type": "script",
+                "url": "http://fdsjfd.com/init/ip2.sh",
+                "sub": []
+            }
+        ]
+    }
+]
