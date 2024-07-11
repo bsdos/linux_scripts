@@ -60,7 +60,12 @@ execute_script() {
 # 解析JSON脚本列表并生成菜单的函数
 parse_script_list() {
     local file=$1
-    menu_items=$(jq -c '.[]' "$file")
+    if [[ -f "$file" ]]; then
+        menu_items=$(jq -c '.[]' "$file")
+    else
+        debug "$file 文件不存在，从网上下载..."
+        menu_items=$(curl -fsSL "https://xxxx.aliyuncs.com/scripts/devops/script_list.json" | jq -c '.[]')
+    fi
 }
 
 # 显示主菜单的函数
